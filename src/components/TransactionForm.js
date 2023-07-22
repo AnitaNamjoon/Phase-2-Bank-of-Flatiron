@@ -11,7 +11,7 @@ function TransactionForm() {
     function handleSubmit(e) {
      e.preventDefault();
 
-    // We construct a new transaction object by extracting the data from the user-input form values.
+    // Construct a new transaction object by extracting the data from the user-input form values.
        const newTransaction = {
         date: date,
         description: description,
