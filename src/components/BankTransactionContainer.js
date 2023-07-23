@@ -4,7 +4,7 @@ import TransactionList from "./TransactionList";
 import TransactionForm from "./TransactionForm";
 
 function BankTransactionContainer(){
-    //State to store th transactions that are fetched from the API.
+    //State to store the transactions that are fetched from the API.
     const [transactions, setTransactions] = useState([]); 
 
    //State to manage the search query for the filtering of transactions.
@@ -25,7 +25,7 @@ function BankTransactionContainer(){
         <div>
             <Search handleSearch={handleSearch} />
             <TransactionForm />
-            <TransactionList transations={transaction} />
+            <TransactionList transactions={transactions} />
 
         </div>
     );
