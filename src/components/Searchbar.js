@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Search({handleSearch}) {
+function Search({ handleSearch }) {
 const [searchText, setSearchText] = useState("");
 
 const handleChange = (e) => {
