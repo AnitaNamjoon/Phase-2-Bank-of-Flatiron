@@ -24,14 +24,9 @@ function TransactionForm() {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-          date: date,
-          description: description,
-          category: category,
-          amount: amount,
-        }),
+        body: JSON.stringify(newTransaction),
       });
-       alert("added successfully")
+       alert("added successfully");
     }
     
     
