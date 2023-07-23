@@ -1,21 +1,13 @@
-import React from "react";
+  import React from "react";
 import Transaction from "./Transaction";
 
 function TransactionsList({ transactions }) {
     // Map through the transactions array and create a list of Transaction components
-    const transactionList = transactions.map((item) => (
-      <Transaction
-        key={item.id}
-        date={item.date}
-        description={item.description}
-        category={item.category}
-        amount={item.amount}
-      />
-    ));
-function TransactionsList({transactions}) {
-  const list = transactions.map((item)=>{
-    return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />;
-  })
+    function TransactionsList({transactions}) {
+      const list = transactions.map((item)=>{
+      return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} />;
+      })
+    
   return (
     <table className="ui celled striped padded table">
       <tbody>
