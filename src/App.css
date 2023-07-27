@@ -1,0 +1,67 @@
+/* Add your custom styles for the App component here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add styles for the Navbar component if applicable */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Add styles for the SearchBar component if applicable */
+  .search-bar {
+    margin: 10px 0;
+  }
+  
+  .search-input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Add styles for the TransForm component if applicable */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  form input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add styles for the Table component if applicable */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Add styles for the sorting arrows if applicable */
+  .sort-icon {
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  
+  
