@@ -1,10 +1,5 @@
-import React from "react";
-import REACTDOM from "react-dom";
-import App from "./components/App";
-import "./index.css";
-import "semintic-ui-css/semantic.min.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-ReactDOM.render(
-<App />,
-document.getElementById("root")
-);
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
