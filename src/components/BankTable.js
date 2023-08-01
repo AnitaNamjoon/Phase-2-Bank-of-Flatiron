@@ -35,3 +35,5 @@ const Table = ({ transactions, onDelete, onSort }) => {
 };
 
 export default Table;
+
+
