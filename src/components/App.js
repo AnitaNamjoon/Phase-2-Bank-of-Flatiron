@@ -6,11 +6,9 @@ import Navbar from './NavigationBar';
 import Table from './BankTable';
 import SearchBar from './SearchBar';
 
-
-
 function App() {
     const [transactions, setTransactions] = useState([]);
-    const [searchTerm, setSearch] = useState('');
+    const [searchTerm, setSearchTerm] = useState('');
     const [sortField, setSortField] = useState('');
     const [sortOrder, setSortOrder] = useState('asc');
 
@@ -21,9 +19,7 @@ function App() {
             .then((data) => {
                 setTransactions(data);
             })
-            .catch((error) => {
-                console.error("Error fetching data:", error);
-            });
+            
     }, []);
 
     // Function to update transactions with a new transaction
@@ -73,7 +69,7 @@ function App() {
     return (
         <div>
             <Navbar />
-            <SearchBar searchTerm={searchTerm} setSearch={setSearch} />
+            <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
             <TransForm update={update} />
             <Table transactions={sortedTransactions} onDelete={deleteTransaction} onSort={handleSort} />
         </div>
@@ -81,4 +77,5 @@ function App() {
 }
 
 export default App;
+
 
